@@ -8,10 +8,10 @@
 echo "***********************************************************************************************************************"
 # Config script #
 TMPDIR='/tmp'
-VERSION='9.1'
+VERSION='9.2'
 MY_URL='https://raw.githubusercontent.com/emil237/levi45multicammanager/main'
-MY_IPK="levi45multicammanager_9.1_all.ipk"
-MY_DEB="levi45multicammanager_9.1_all.deb"
+MY_IPK="levi45multicammanager_9.2_all.ipk"
+MY_DEB="levi45multicammanager_9.2_all.deb"
 ####################
 MY_EM='============================================================================================================'
 #  Remove Old Plugin  #
@@ -60,6 +60,9 @@ init 4
 wait
 init 3
 exit 0
+
+
+
 
 
 
