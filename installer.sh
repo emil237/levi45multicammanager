@@ -8,7 +8,7 @@
 echo "***********************************************************************************************************************"
 # Config script #
 TMPDIR='/tmp'
-VERSION='9.5'
+VERSION='9.6'
 MY_URL='https://raw.githubusercontent.com/emil237/levi45multicammanager/main'
 MY_IPK="levi45multicammanager_9.6-r1_all.ipk"
 MY_DEB="levi45multicammanager_9.6-r1_all.deb"
