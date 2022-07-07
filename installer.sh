@@ -10,8 +10,8 @@ echo "**************************************************************************
 TMPDIR='/tmp'
 VERSION='9.5'
 MY_URL='https://raw.githubusercontent.com/emil237/levi45multicammanager/main'
-MY_IPK="levi45multicammanager_9.5_all.ipk"
-MY_DEB="levi45multicammanager_9.5_all.deb"
+MY_IPK="levi45multicammanager_9.6-r1_all.ipk"
+MY_DEB="levi45multicammanager_9.6-r1_all.deb"
 ####################
 MY_EM='============================================================================================================'
 #  Remove Old Plugin  #
@@ -43,8 +43,8 @@ echo "==========================================================================
 set +e
 cd 
 wait
-rm -f /tmp/$MY_IPK
-rm -f /tmp/$MY_DEB
+rm -rf /tmp/$MY_IPK
+rm -rf /tmp/$MY_DEB
 	if [ $? -eq 0 ]; then
 echo ">>>>  SUCCESSFULLY INSTALLED <<<<"
 fi
@@ -60,6 +60,8 @@ init 4
 wait
 init 3
 exit 0
+
+
 
 
 
