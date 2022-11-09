@@ -8,10 +8,10 @@
 echo "***********************************************************************************************************************"
 # Config script #
 TMPDIR='/tmp'
-VERSION='9.6-r6'
+VERSION='9.6-r8'
 MY_URL='https://raw.githubusercontent.com/emil237/levi45multicammanager/main'
-MY_IPK="enigma2-plugin-extensions-levi45multicammanager_9.6-r6_all.ipk"
-MY_DEB="enigma2-plugin-extensions-levi45multicammanager_9.6-r6_all.deb"
+MY_IPK="enigma2-plugin-extensions-levi45multicammanager_9.6-r8_all.ipk"
+MY_DEB="enigma2-plugin-extensions-levi45multicammanager_9.6-r8_all.deb"
 ####################
 MY_EM='============================================================================================================'
 #  Remove Old Plugin  #
@@ -30,14 +30,14 @@ echo "   Install Plugin please wait "
 cd /tmp 
 
 set -e
-     wget "$MY_URL/$MY_IPK"
-  wait
-     wget "$MY_URL/$MY_DEB"
-
+  wget "$MY_URL/$MY_DEB"
+  wait 
 if which dpkg > /dev/null 2>&1; then
 		dpkg -i --force-overwrite $MY_DEB; apt-get install -f -y
 	else
-		opkg install --force-reinstall $MY_IPK
+  wget "$MY_URL/$MY_IPK"
+  wait
+		opkg install --force-overwrite $MY_IPK
 	fi
 echo "============================================================================================================================"
 set +e
@@ -60,6 +60,9 @@ init 4
 wait
 init 3
 exit 0
+
+
+
 
 
 
