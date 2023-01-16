@@ -8,10 +8,10 @@
 echo "***********************************************************************************************************************"
 # Config script #
 TMPDIR='/tmp'
-VERSION='9.6-r8'
+VERSION='9.6-r12'
 MY_URL='https://raw.githubusercontent.com/emil237/levi45multicammanager/main'
-MY_IPK="enigma2-plugin-extensions-levi45multicammanager_9.6-r8_all.ipk"
-MY_DEB="enigma2-plugin-extensions-levi45multicammanager_9.6-r8_all.deb"
+MY_IPK="enigma2-plugin-extensions-levi45multicammanager_9.6-r12_all.ipk"
+MY_DEB="enigma2-plugin-extensions-levi45multicammanager_9.6-r12_all.deb"
 ####################
 MY_EM='============================================================================================================'
 #  Remove Old Plugin  #
@@ -60,6 +60,8 @@ init 4
 wait
 init 3
 exit 0
+
+
 
 
 
